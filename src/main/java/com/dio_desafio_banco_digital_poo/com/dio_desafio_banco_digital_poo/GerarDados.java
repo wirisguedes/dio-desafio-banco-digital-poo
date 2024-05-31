@@ -8,6 +8,16 @@ public class GerarDados {
 	
 	static Faker faker = new Faker(new Locale("pt-BR"));
 
+	public static String gerarNomeCliente() {
+		String nome = faker.name().fullName();
+		
+		return nome;
+	}
 	
+	public static String gerarConta() {
+		String conta = faker.number().digits(5);
+		
+		return conta;
+	}
    
 }
